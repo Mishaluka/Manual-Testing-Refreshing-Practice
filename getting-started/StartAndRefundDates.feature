@@ -1,0 +1,21 @@
+@sep11
+
+Feature: Program start dates and Refund dates
+
+    As a customer, I want to see the program start dates and refund policy details before enrolling
+    so that I can make informed decisions.
+
+
+    ### Acceptance Criteria
+    # 1. Program Start date and refund dates must be displayed in step one in Test Automation with Selenium Program.
+    # 2. The displayed program start date and refund dates must be correct
+
+    Background:
+        Given user is on the Start Application step 1 page
+
+    # Sceneario steps
+    Scenario: Program start date and refund policy are displayed correctly
+        Then the program start date should be displayed
+        And the refund policy details should be displayed
+        And the program start date should match the program information
+        And the refund policy dates should match the program information
